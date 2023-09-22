@@ -1,0 +1,83 @@
+* {
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(img/bg.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:darkkhaki;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    position: fixed;
+    align-items: center;
+    word-spacing: 70px;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 15px;
+}
+
+nav .nav a {
+    color: rgb(112, 209, 209);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+    word-spacing: 0;
+}
+
+nav .nav a:last-child {
+    word-spacing: -3px;
+}
+
+nav .nav a:hover {
+    border-bottom: 1px solid #ffff;
+    transition: all 0.5s;
+    color: red;
+}
+
+nav .logo {
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 7px 80px;
+    padding-right: 400px;
+    
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: red;
+    font-family: kablammo;
+}
+
+nav .logo span {
+    color: #ffff;
+    font-family: kablammo;
+}
+
+h1 {
+    padding: 200px;
+    text-align: center;
+    font-family: ravi prakash;
+    font-size: 80px;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-family: croissant one;
+}
+
+h2 {
+    text-align: center;
+    font-size: 80px;
+    font-family: kablammo;
+}
