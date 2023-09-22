@@ -1,6 +1,10 @@
 * {
-    font-family: Verdana, sans-serif;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,43 +16,47 @@ body {
     background-color:darkkhaki;
 }
 
-.navbar {
-    display: flex;
+nav {
     background-color: black;
+    display: flex;
+    gap: 17rem;
     position: fixed;
     align-items: center;
-    word-spacing: 70px;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 15px;
+    padding: 20px 20px;
+}
+
+nav .nav div {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding: 0px 50px;
 }
 
 nav .nav a {
+    text-decoration: none;
+    text-align: center;
     color: rgb(112, 209, 209);
-    font-size: 20px;
-    font-weight: 300;
-    padding: 10px;
-    word-spacing: 0;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff00;
 }
 
 nav .nav a:last-child {
-    word-spacing: -3px;
+    word-spacing: 1px;
 }
 
 nav .nav a:hover {
     border-bottom: 1px solid #ffff;
     transition: all 0.5s;
-    color: red;
+    color: orangered;
 }
 
 nav .logo {
     font-size: 35px;
     font-weight: 900;
     letter-spacing: 2px;
-    padding: 7px 80px;
-    padding-right: 400px;
-    
+    padding: 0px 30px;
 }
 
 nav .logo a {
@@ -62,15 +70,22 @@ nav .logo span {
     font-family: kablammo;
 }
 
+nav .menu span {
+    font-size: 28px;
+    display: none;
+}
+
 h1 {
-    padding: 200px;
+    padding: 150px 10px;
+    padding-bottom: 80px;
     text-align: center;
-    font-family: ravi prakash;
+    font-family: ubuntu;
     font-size: 80px;
+    border-bottom: solid black;
 }
 
 p {
-    font-size: 30px;
+    padding: 200px;
     text-align: center;
     font-size: 50px;
     font-family: croissant one;
@@ -80,4 +95,62 @@ h2 {
     text-align: center;
     font-size: 80px;
     font-family: kablammo;
+}
+
+@media screen and (max-width: 360px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    nav .logo {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    nav .nav {
+        width: 100%;
+        transition: all 3s;
+    }
+
+    nav .nav div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 1rem;     
+    }
+
+    nav div.hidden {
+        display: none;
+    }
+
+    nav .nav a {
+        font-size: 15px;
+    }
+
+    nav .menu span {
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 0px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        border-bottom: solid black;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 15px;
+        padding: 50px 20px ;
+        text-align: center;
+    }
 }
