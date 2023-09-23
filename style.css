@@ -97,7 +97,7 @@ h2 {
     font-family: kablammo;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
 
     nav {
         flex-wrap: wrap;
